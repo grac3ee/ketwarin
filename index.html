@@ -3,12 +3,13 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Portfolio ของเกตุวรินทร์ เทพสาร นักศึกษาวิทยาการคอมพิวเตอร์ สนใจ Frontend Development" />
-  <title>เกตุวรินทร์ เทพสาร | Portfolio</title>
+  <meta name="description" content="Portfolio ของเกตุวรินทร์ เทพสาร | Full Stack Developer Co-op Student" />
+  <title>เกตุวรินทร์ เทพสาร | Full Stack Developer Co-op Student</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+  <meta name="theme-color" content="#f6f0eb" />
 </head>
 <body>
   <header class="site-header">
@@ -28,104 +29,299 @@
   <main>
     <section id="home" class="hero section-shell">
       <div class="hero-copy">
-        <p class="kicker">PORTFOLIO สำหรับฝึกงาน • FRONTEND DEVELOPER</p>
-        <h1>เกตุวรินทร์<br><em>เทพสาร</em></h1>
-        <p class="hero-lead">นักศึกษาชั้นปีที่ 4 สาขาวิทยาการคอมพิวเตอร์ สนใจฝึกงานด้าน Software Development โดยเน้น Front-end Development มีประสบการณ์จากการทำโปรเจกต์ในการวิเคราะห์ ออกแบบ และพัฒนาเว็บไซต์ รวมถึงมีพื้นฐานด้าน Back-end และฐานข้อมูล</p>
+        <p class="kicker">CO-OP PORTFOLIO • FULL STACK DEVELOPER</p>
+        <h1 class="hero-name">เกตุวรินทร์ <em>เทพสาร</em></h1>
+        <p class="hero-role">Full Stack Developer <span>Co-op Student</span></p>
+        <p class="hero-lead">นักศึกษาวิทยาการคอมพิวเตอร์ที่สนใจการพัฒนา Web Application แบบครบวงจร ตั้งแต่การออกแบบ Front-end การพัฒนา Back-end ไปจนถึงการจัดการฐานข้อมูล ผ่านการลงมือทำโปรเจกต์จริง</p>
+        <div class="hero-stack" aria-label="เทคโนโลยีหลัก"><span>HTML / CSS / JavaScript</span><span>ASP.NET Core MVC</span><span>SQL Server</span></div>
         <div class="hero-actions">
           <a class="button dark" href="#projects">ดูโปรเจกต์</a>
           <a class="button outline" href="mailto:ketwarin.tep@gmail.com">ติดต่อฉัน</a>
         </div>
         <div class="mini-meta">
           <span><strong>มหาวิทยาลัย</strong>มหาวิทยาลัยศรีปทุม</span>
-          <span><strong>ระยะเวลาฝึกงาน</strong>มกราคม – เมษายน 2570</span>
+          <span><strong>ระยะเวลาสหกิจศึกษา</strong>มกราคม – เมษายน 2570</span>
         </div>
       </div>
 
       <div class="hero-visual">
         <div class="portrait-frame">
-          <img src="profile.jpg" alt="รูปโปรไฟล์ เกตุวรินทร์ เทพสาร">
+          <img fetchpriority="high" src="profile.jpg" alt="รูปโปรไฟล์ เกตุวรินทร์ เทพสาร">
         </div>
-        <p class="portrait-note">สนใจสร้างเว็บไซต์ที่ใช้งานง่าย มีโครงสร้างชัดเจน และพัฒนาต่อยอดได้</p>
       </div>
     </section>
 
-    <section id="about" class="editorial-section">
-      <div class="section-shell about-skills-grid">
-        <div class="about-panel">
+    <section id="about" class="editorial-section about-section">
+      <div class="section-shell about-single-layout">
+        <div class="about-panel about-panel-wide">
           <p class="section-heading">เกี่ยวกับฉัน</p>
-          <h2>เรียนรู้จากการ<br><em>ลงมือทำจริง</em></h2>
-          <div class="about-copy">
-            <p>มีพื้นฐานด้าน Front-end Development ควบคู่กับความรู้ด้าน Back-end และฐานข้อมูล สนใจการสร้างเว็บไซต์ที่ใช้งานง่าย มีประสิทธิภาพ และสามารถทำงานร่วมกับทีมได้อย่างเป็นระบบ</p>
-            <p>ประสบการณ์ทำงานจริงในโรงแรม ร้านอาหาร ร้านค้าปลีก และคาเฟ่ ช่วยพัฒนาทักษะการสื่อสาร การประสานงาน การแก้ปัญหาเฉพาะหน้า และความรับผิดชอบในการทำงาน</p>
+          <div class="about-content-layout">
+            <h2>เรียนรู้จากการ<br><em>ลงมือทำจริง</em></h2>
+            <div class="about-copy">
+              <p>เป็นนักศึกษาสาขาวิทยาการคอมพิวเตอร์ที่สนใจการพัฒนา Web Application แบบ Full Stack มีประสบการณ์จากการพัฒนาโครงงานเดี่ยวและการทำงานร่วมกับทีม ตั้งแต่การวิเคราะห์ระบบ ออกแบบหน้าเว็บไซต์ พัฒนา Front-end, Back-end ไปจนถึงการเชื่อมต่อฐานข้อมูล</p>
+              <p>นอกจากนี้ ประสบการณ์ทำงานด้านบริการยังช่วยพัฒนาทักษะการสื่อสาร การประสานงาน และการแก้ไขปัญหาเฉพาะหน้า พร้อมนำความรู้และประสบการณ์มาพัฒนาต่อยอดผ่านการทำงานจริงในช่วงสหกิจศึกษา</p>
+            </div>
           </div>
         </div>
-        <div class="skills-panel">
-          <p class="section-heading">ทักษะด้านเทคโนโลยี</p>
-          <div class="skills-text">
-            <div><strong>การพัฒนาเว็บไซต์</strong><span>HTML, CSS, JavaScript, Python, C#, ASP.NET Core MVC</span></div>
-            <div><strong>การออกแบบ UI/UX</strong><span>Figma, Canva</span></div>
-            <div><strong>การวิเคราะห์ระบบ</strong><span>Flowchart, System Flow, Use Case Diagram</span></div>
-            <div><strong>ฐานข้อมูล</strong><span>SQL, MySQL, SQL Server</span></div>
-            <div><strong>เครื่องมือสำหรับนักพัฒนา</strong><span>Git, GitHub, Azure Data Studio</span></div>
-            <div><strong>โปรแกรมอื่น ๆ</strong><span>Excel, Word, PowerPoint, CapCut</span></div>
-          </div>
+      </div>
+    </section>
+
+    <section class="skills-section">
+      <div class="section-shell skills-single-layout">
+        <div class="skills-section-head">
+          <p class="section-heading">Skills &amp; Technologies</p>
+          <p class="skills-intro">เทคโนโลยีและเครื่องมือที่ใช้ในการพัฒนา ออกแบบ และวิเคราะห์ระบบ</p>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card">
+            <div class="skill-card-head">
+              <span class="skill-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M8 8 4 12l4 4M16 8l4 4-4 4M14 5l-4 14"/></svg>
+              </span>
+              <div><span class="skill-number">01</span><h3>Front-end Development</h3></div>
+            </div>
+            <div class="skill-pills"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-card-head">
+              <span class="skill-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M7 4h10a2 2 0 0 1 2 2v12H5V6a2 2 0 0 1 2-2Z"/><path d="M8 9h8M8 13h5M9 21h6"/></svg>
+              </span>
+              <div><span class="skill-number">02</span><h3>Back-end &amp; Programming</h3></div>
+            </div>
+            <div class="skill-pills"><span>C#</span><span>ASP.NET Core MVC</span><span>Python</span></div>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-card-head">
+              <span class="skill-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><ellipse cx="12" cy="5" rx="7" ry="3"/><path d="M5 5v6c0 1.7 3.1 3 7 3s7-1.3 7-3V5M5 11v6c0 1.7 3.1 3 7 3s7-1.3 7-3v-6"/></svg>
+              </span>
+              <div><span class="skill-number">03</span><h3>Database</h3></div>
+            </div>
+            <div class="skill-pills"><span>SQL</span><span>MySQL</span><span>SQL Server</span></div>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-card-head">
+              <span class="skill-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="6" height="5" rx="1"/><rect x="15" y="16" width="6" height="5" rx="1"/><rect x="15" y="3" width="6" height="5" rx="1"/><path d="M9 5.5h6M18 8v4a2 2 0 0 1-2 2H8a2 2 0 0 0-2 2v0"/></svg>
+              </span>
+              <div><span class="skill-number">04</span><h3>System Analysis</h3></div>
+            </div>
+            <div class="skill-pills"><span>Flowchart</span><span>System Flow</span><span>Use Case Diagram</span></div>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-card-head">
+              <span class="skill-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M4 6h16v12H4z"/><path d="m8 10 2 2-2 2M12 14h4"/></svg>
+              </span>
+              <div><span class="skill-number">05</span><h3>Developer Tools</h3></div>
+            </div>
+            <div class="skill-pills"><span>Git</span><span>GitHub</span><span>Azure Data Studio</span></div>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-card-head">
+              <span class="skill-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M12 3a9 9 0 1 0 0 18h1.5a2 2 0 0 0 0-4H12a1.5 1.5 0 0 1 0-3h3a6 6 0 0 0 0-12h-3Z"/><circle cx="7.5" cy="9" r="1"/><circle cx="10" cy="6.5" r="1"/></svg>
+              </span>
+              <div><span class="skill-number">06</span><h3>Design &amp; Other Tools</h3></div>
+            </div>
+            <div class="skill-pills"><span>Figma</span><span>Canva</span><span>Excel</span><span>Word</span><span>PowerPoint</span><span>CapCut</span></div>
+          </article>
         </div>
       </div>
     </section>
 
     <section id="projects" class="projects-section">
       <div class="section-shell">
-        <div class="projects-head">
+        <div class="projects-head projects-head-detail">
           <div>
-            <p class="kicker dark-kicker">ผลงานที่เลือกนำเสนอ</p>
-            <h2>โปรเจกต์ที่เลือกนำเสนอ</h2>
+            <p class="kicker dark-kicker">MY PROJECTS</p>
+            <h2>Featured Projects</h2>
           </div>
-          <p>ภาพด้านล่างเป็นตัวอย่างหน้าจอของแต่ละโปรเจกต์ ส่วนโค้ดและไฟล์โปรเจกต์จริงอยู่บน GitHub</p>
+          <p>3 โปรเจกต์ที่แสดงทักษะการพัฒนา Web Application, การเชื่อมระบบ และการออกแบบ Workflow โดยเน้นบทบาทที่ลงมือทำจริง</p>
         </div>
 
-        <div class="project-grid">
-          <article class="project-card">
-            <div class="polaroid-stack" aria-label="ภาพตัวอย่าง LovelyGift">
-              <figure class="shot shot-left"><img src="lovelygift-1.png" alt="หน้าแรก LovelyGift"></figure>
-              <figure class="shot shot-center"><img src="lovelygift-2.png" alt="หน้ารายละเอียดสินค้า LovelyGift"></figure>
-              <figure class="shot shot-right"><img src="lovelygift-3.png" alt="หน้า Admin Dashboard LovelyGift"></figure>
+        <div class="project-grid project-detail-list">
+          <article class="project-card project-feature">
+            <div class="project-feature-head">
+              <div>
+                <span class="project-index">01 / WEB APPLICATION</span>
+                <h3>LovelyGift</h3>
+                <p class="project-subtitle">เว็บไซต์ร้านขายของขวัญออนไลน์</p>
+              </div>
+              <div class="project-mini-tags" aria-label="ประเภทระบบ LovelyGift">
+                <span>User</span><span>Admin</span><span>Database</span>
+              </div>
             </div>
-            <div class="project-content">
-              <span class="project-label">Web Application</span>
-              <h3>LovelyGift</h3>
-              <p class="project-subtitle">เว็บไซต์ร้านขายของขวัญออนไลน์</p>
-              <p>วิเคราะห์ความต้องการและวางโครงสร้างระบบสำหรับลูกค้าและผู้ดูแลระบบ พร้อมฟังก์ชันการเลือกสินค้า การสั่งซื้อ การชำระเงิน การจัดการสินค้า โปรโมชั่น และสถานะการจัดส่ง</p>
-              <a class="project-link" href="https://github.com/grac3ee/LovelyGift" target="_blank" rel="noopener">ดูโปรเจกต์บน GitHub →</a>
+
+            <div class="project-feature-body">
+              <div class="project-visual-column">
+                <div class="polaroid-stack project-polaroid" aria-label="ภาพตัวอย่าง LovelyGift">
+                  <figure class="shot shot-left"><img src="lovelygift-2.png" alt="หน้ารายละเอียดสินค้า LovelyGift" loading="lazy" decoding="async"></figure>
+                  <figure class="shot shot-center"><img src="lovelygift-1.png" alt="หน้าแรก LovelyGift" loading="lazy" decoding="async"></figure>
+                  <figure class="shot shot-right"><img src="lovelygift-3.png" alt="หน้า Admin Dashboard LovelyGift" loading="lazy" decoding="async"></figure>
+                </div>
+                <div class="project-type-note">USER INTERFACE • CUSTOMER FLOW • ADMIN DASHBOARD</div>
+              </div>
+
+              <div class="project-content project-content-detail">
+                <p class="project-summary">Web Application สำหรับร้านขายของขวัญออนไลน์ รองรับการทำงานทั้งฝั่งลูกค้าและผู้ดูแลระบบ ตั้งแต่เลือกสินค้า สั่งซื้อ ชำระเงิน ไปจนถึงจัดการสินค้า โปรโมชั่น สต็อก และคำสั่งซื้อ</p>
+
+                <div class="project-info-grid">
+                  <div class="project-info-block">
+                    <span>ปัญหา</span>
+                    <p>กระบวนการขายออนไลน์มีหลายขั้นตอน ทั้งการเลือกสินค้า การสั่งซื้อ การชำระเงิน สต็อก และการจัดการหลังบ้าน จึงต้องมีระบบที่เชื่อม Workflow ให้ทำงานต่อเนื่องและตรวจสอบได้</p>
+                  </div>
+                  <div class="project-info-block">
+                    <span>สิ่งที่สร้าง</span>
+                    <p>พัฒนาเว็บไซต์ร้านของขวัญออนไลน์ พร้อมระบบลูกค้าและ Admin สำหรับจัดการสินค้า โปรโมชั่น คำสั่งซื้อ และข้อมูลที่เกี่ยวข้องกับการขาย</p>
+                  </div>
+                  <div class="project-info-block project-role-block">
+                    <span>✦ บทบาทของฉัน</span>
+                    <p>วิเคราะห์ Requirement และ Workflow วางโครงสร้างระบบ พัฒนาหน้าเว็บไซต์และฟังก์ชันหลัก รวมถึงเชื่อมการทำงานกับฐานข้อมูล</p>
+                  </div>
+                  <div class="project-info-block project-learning-block">
+                    <span>สิ่งที่ได้เรียนรู้</span>
+                    <p>เข้าใจกระบวนการพัฒนา Web Application แบบครบ Workflow ตั้งแต่การวิเคราะห์ระบบ การออกแบบหน้าเว็บ การตรวจสอบข้อมูล ไปจนถึงการเชื่อมฐานข้อมูลและจัดการสถานะคำสั่งซื้อ</p>
+                  </div>
+                </div>
+
+                <div class="project-tech-block">
+                  <span class="detail-label">Technology</span>
+                  <div class="tech-tags"><span>ASP.NET Core MVC</span><span>C#</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>SQL Server</span><span>EF Core</span></div>
+                </div>
+
+                <div class="project-features-block">
+                  <span class="detail-label">Features</span>
+                  <ul class="feature-list"><li>ระบบสินค้าและตะกร้า</li><li>Checkout และคำสั่งซื้อ</li><li>Order History</li><li>Admin จัดการสินค้าและโปรโมชั่น</li><li>ตรวจสอบและตัดสต็อก</li></ul>
+                </div>
+
+                <a class="project-link project-button" href="https://github.com/grac3ee/LovelyGift" target="_blank" rel="noopener noreferrer">ดูโค้ดบน GitHub <span>↗</span></a>
+              </div>
             </div>
           </article>
 
-          <article class="project-card">
-            <div class="polaroid-stack" aria-label="ภาพตัวอย่าง LawBot">
-              <figure class="shot shot-left"><img src="lawbot-1.png" alt="หน้าแรก LawBot"></figure>
-              <figure class="shot shot-center"><img src="lawbot-2.png" alt="หน้า Chat LawBot"></figure>
-              <figure class="shot shot-right"><img src="lawbot-3.png" alt="หน้าความรู้กฎหมาย LawBot"></figure>
+          <article class="project-card project-feature">
+            <div class="project-feature-head">
+              <div>
+                <span class="project-index">02 / AI PROJECT</span>
+                <h3>LawBot</h3>
+                <p class="project-subtitle">ระบบผู้ช่วยด้านกฎหมายด้วย RAG</p>
+              </div>
+              <div class="project-mini-tags" aria-label="ประเภทระบบ LawBot">
+                <span>Chatbot</span><span>RAG</span><span>Legal Data</span>
+              </div>
             </div>
-            <div class="project-content">
-              <span class="project-label">AI / NLP / RAG</span>
-              <h3>LawBot</h3>
-              <p class="project-subtitle">ระบบผู้ช่วยด้านกฎหมาย</p>
-              <p>วิเคราะห์และวางโครงสร้าง Chatbot สำหรับตอบคำถามด้านกฎหมาย พัฒนาและทดสอบระบบค้นหาและตอบคำถามจากข้อมูลกฎหมาย โดยประยุกต์ใช้ AI, NLP และ RAG</p>
-              <a class="project-link" href="https://github.com/grac3ee/LawBot-" target="_blank" rel="noopener">ดูโปรเจกต์บน GitHub →</a>
+
+            <div class="project-feature-body">
+              <div class="project-visual-column">
+                <div class="polaroid-stack project-polaroid" aria-label="ภาพตัวอย่าง LawBot">
+                  <figure class="shot shot-left"><img src="lawbot-2.png" alt="หน้า Chat LawBot" loading="lazy" decoding="async"></figure>
+                  <figure class="shot shot-center"><img src="lawbot-1.png" alt="หน้าแรก LawBot" loading="lazy" decoding="async"></figure>
+                  <figure class="shot shot-right"><img src="lawbot-3.png" alt="หน้าความรู้กฎหมาย LawBot" loading="lazy" decoding="async"></figure>
+                </div>
+                <div class="project-type-note">AI • RAG • QUESTION ANSWERING</div>
+              </div>
+
+              <div class="project-content project-content-detail">
+                <p class="project-summary">Thai Legal Assistant Chatbot สำหรับช่วยค้นและสรุปข้อมูลกฎหมายจากชุดข้อมูลที่กำหนด โดยเชื่อม Front-end กับ FastAPI Backend และใช้แนวคิด Retrieval-Augmented Generation เพื่อสร้างคำตอบที่อ้างอิงบริบทจากข้อมูล</p>
+
+                <div class="project-info-grid">
+                  <div class="project-info-block">
+                    <span>ปัญหา</span>
+                    <p>ข้อมูลกฎหมายมีรายละเอียดมากและใช้ภาษาที่เข้าใจยาก ผู้ใช้ทั่วไปจึงอาจค้นหาข้อมูลที่เกี่ยวข้องกับคำถามของตนเองได้ไม่สะดวก</p>
+                  </div>
+                  <div class="project-info-block">
+                    <span>สิ่งที่สร้าง</span>
+                    <p>พัฒนา Chatbot ที่รับคำถามจากผู้ใช้ ค้นข้อมูลที่เกี่ยวข้องจาก Dataset ส่งผ่าน RAG Pipeline และแสดงคำตอบพร้อมสรุปภาษาที่อ่านเข้าใจง่ายขึ้น</p>
+                  </div>
+                  <div class="project-info-block project-role-block">
+                    <span>✦ บทบาทของฉัน</span>
+                    <p>วิเคราะห์โครงสร้าง Chatbot ออกแบบ Workflow การถาม–ตอบ พัฒนาและทดสอบระบบค้นหาคำตอบ รวมถึงออกแบบการนำเสนอผลลัพธ์ให้เหมาะกับผู้ใช้งาน</p>
+                  </div>
+                  <div class="project-info-block project-learning-block">
+                    <span>สิ่งที่ได้เรียนรู้</span>
+                    <p>เรียนรู้การเชื่อม Front-end, Backend และ RAG เข้าด้วยกัน รวมถึงการออกแบบคำตอบสำหรับข้อมูลที่ต้องสื่อสารอย่างระมัดระวัง เช่น การแสดง Disclaimer และสรุปภาษาคนทั่วไป</p>
+                  </div>
+                </div>
+
+                <div class="project-tech-block">
+                  <span class="detail-label">Technology</span>
+                  <div class="tech-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Python</span><span>FastAPI</span><span>RAG</span><span>LLM</span></div>
+                </div>
+
+                <div class="project-features-block">
+                  <span class="detail-label">Features</span>
+                  <ul class="feature-list"><li>ถาม–ตอบข้อมูลกฎหมาย</li><li>ค้นข้อมูลจาก Dataset</li><li>รองรับคำถามต่อเนื่อง</li><li>สรุปภาษาคนทั่วไป</li><li>Disclaimer ก่อนใช้งาน</li></ul>
+                </div>
+
+                <a class="project-link project-button" href="https://github.com/grac3ee/LawBot-" target="_blank" rel="noopener noreferrer">ดูโค้ดบน GitHub <span>↗</span></a>
+              </div>
             </div>
           </article>
 
-          <article class="project-card">
-            <div class="polaroid-stack" aria-label="ภาพตัวอย่าง Fix Up">
-              <figure class="shot shot-left"><img src="fixup-1.png" alt="หน้ารายละเอียดงานซ่อม Fix Up"></figure>
-              <figure class="shot shot-center"><img src="fixup-2.png" alt="หน้า Dashboard Fix Up"></figure>
-              <figure class="shot shot-right"><img src="fixup-3.png" alt="หน้าส่งงาน Fix Up"></figure>
+          <article class="project-card project-feature">
+            <div class="project-feature-head">
+              <div>
+                <span class="project-index">03 / MANAGEMENT SYSTEM</span>
+                <h3>Fix Up</h3>
+                <p class="project-subtitle">ระบบแจ้งซ่อมและติดตามสถานะงาน</p>
+              </div>
+              <div class="project-mini-tags" aria-label="ประเภทระบบ Fix Up">
+                <span>User</span><span>Technician</span><span>Admin</span>
+              </div>
             </div>
-            <div class="project-content">
-              <span class="project-label">System Design / API</span>
-              <h3>Fix Up</h3>
-              <p class="project-subtitle">แอปพลิเคชันแจ้งซ่อมออนไลน์</p>
-              <p>วิเคราะห์ความต้องการและออกแบบระบบแจ้งซ่อมสำหรับผู้ใช้งาน ช่าง และผู้ดูแลระบบ พร้อมออกแบบโครงสร้างฐานข้อมูลและ API เพื่อรองรับการแจ้งซ่อมและติดตามสถานะงาน</p>
-              <a class="project-link" href="https://github.com/grac3ee/Fixup" target="_blank" rel="noopener">ดูโปรเจกต์บน GitHub →</a>
+
+            <div class="project-feature-body">
+              <div class="project-visual-column">
+                <div class="polaroid-stack project-polaroid" aria-label="ภาพตัวอย่าง Fix Up">
+                  <figure class="shot shot-left"><img src="fixup-2.png" alt="หน้า Dashboard Fix Up" loading="lazy" decoding="async"></figure>
+                  <figure class="shot shot-center"><img src="fixup-1.png" alt="หน้ารายละเอียดงานซ่อม Fix Up" loading="lazy" decoding="async"></figure>
+                  <figure class="shot shot-right"><img src="fixup-3.png" alt="หน้าส่งงาน Fix Up" loading="lazy" decoding="async"></figure>
+                </div>
+                <div class="project-type-note">MANAGEMENT SYSTEM • REST API</div>
+              </div>
+
+              <div class="project-content project-content-detail">
+                <p class="project-summary">ระบบบริหารจัดการงานแจ้งซ่อมสำหรับผู้ใช้งาน ช่าง และผู้ดูแลระบบ ช่วยรวบรวมคำขอซ่อมไว้ในระบบเดียวและติดตามสถานะงานตั้งแต่แจ้งปัญหาจนถึงการดำเนินงานของช่าง</p>
+
+                <div class="project-info-grid">
+                  <div class="project-info-block">
+                    <span>ปัญหา</span>
+                    <p>การแจ้งซ่อมผ่านช่องทางที่กระจัดกระจายทำให้ติดตามงานยาก ข้อมูลอาจตกหล่น และผู้แจ้งไม่เห็นสถานะการดำเนินงานที่ชัดเจน</p>
+                  </div>
+                  <div class="project-info-block">
+                    <span>สิ่งที่สร้าง</span>
+                    <p>พัฒนาระบบแจ้งซ่อมที่มีหน้า Dashboard การจัดการคำขอซ่อม การติดตามสถานะ และการเชื่อมข้อมูลระหว่าง Front-end, API และฐานข้อมูล</p>
+                  </div>
+                  <div class="project-info-block project-role-block">
+                    <span>✦ บทบาทของฉัน</span>
+                    <p>วิเคราะห์ความต้องการและ Workflow ของผู้ใช้แต่ละบทบาท ออกแบบหน้าจอและโครงสร้างระบบ รวมถึงพัฒนาการเชื่อมต่อ API และฐานข้อมูล</p>
+                  </div>
+                  <div class="project-info-block project-learning-block">
+                    <span>สิ่งที่ได้เรียนรู้</span>
+                    <p>เข้าใจการออกแบบระบบที่มีหลายบทบาท การจัดการสถานะงาน และการเชื่อม React Front-end กับ REST API และฐานข้อมูลให้ทำงานเป็น Workflow เดียวกัน</p>
+                  </div>
+                </div>
+
+                <div class="project-tech-block">
+                  <span class="detail-label">Technology</span>
+                  <div class="tech-tags"><span>React</span><span>Vite</span><span>JavaScript</span><span>Node.js</span><span>Express</span><span>MySQL</span><span>Axios</span></div>
+                </div>
+
+                <div class="project-features-block">
+                  <span class="detail-label">Features</span>
+                  <ul class="feature-list"><li>แจ้งคำขอซ่อม</li><li>ติดตามสถานะงาน</li><li>Dashboard</li><li>รองรับหลายบทบาทผู้ใช้</li><li>เชื่อม Front-end กับ REST API</li></ul>
+                </div>
+
+                <a class="project-link project-button" href="https://github.com/grac3ee/Fixup" target="_blank" rel="noopener noreferrer">ดูโค้ดบน GitHub <span>↗</span></a>
+              </div>
             </div>
           </article>
         </div>
@@ -148,25 +344,41 @@
     </section>
 
     <section id="contact" class="contact-section">
-      <div class="section-shell contact-layout">
-        <div>
-          <p class="kicker dark-kicker">ติดต่อ</p>
-          <h2>กำลังมองหาโอกาสฝึกงานด้าน<br><em>Front-end Development</em></h2>
+      <div class="section-shell contact-layout contact-layout-refined">
+        <div class="contact-heading-block">
+          <p class="contact-section-title">ติดต่อ</p>
+          <h2>กำลังมองหาโอกาสสหกิจศึกษาด้าน <em>Full Stack Development</em></h2>
+          <p class="contact-intro">หากต้องการติดต่อเพื่อสอบถามข้อมูลเพิ่มเติม นัดหมายสัมภาษณ์ หรือพูดคุยเกี่ยวกับโอกาสการฝึกประสบการณ์ สามารถติดต่อได้ผ่านช่องทางด้านล่างค่ะ</p>
         </div>
-        <div class="contact-info">
-          <a href="tel:+66849916878"><span>โทรศัพท์</span><strong>084-991-6878</strong></a>
-          <a href="mailto:ketwarin.tep@gmail.com"><span>อีเมล</span><strong>ketwarin.tep@gmail.com</strong></a>
-          <a href="https://www.linkedin.com/in/ketwarin-tepsarn-aa4371436/" target="_blank" rel="noopener"><span>LinkedIn</span><strong>Ketwarin Tepsarn</strong></a>
-          <a href="https://github.com/grac3ee" target="_blank" rel="noopener"><span>GitHub</span><strong>github.com/grac3ee</strong></a>
-          <a class="contact-download" href="Ketwarin_Tepsarn_CV.pdf" download="Ketwarin_Tepsarn_CV.pdf">ดาวน์โหลด CV</a>
+
+        <div class="contact-content-grid">
+          <div class="contact-info-panel">
+            <div class="contact-info">
+              <a href="tel:+66849916878"><span>โทรศัพท์</span><strong>084-991-6878</strong></a>
+              <a href="mailto:ketwarin.tep@gmail.com"><span>อีเมล</span><strong>ketwarin.tep@gmail.com</strong></a>
+              <a href="https://www.linkedin.com/in/ketwarin-tepsarn-aa4371436/" target="_blank" rel="noopener noreferrer"><span>LinkedIn</span><strong>Ketwarin Tepsarn</strong></a>
+              <a href="https://github.com/grac3ee" target="_blank" rel="noopener noreferrer"><span>GitHub</span><strong>github.com/grac3ee</strong></a>
+              <a class="contact-download" href="Ketwarin_Tepsarn_CV.pdf" download="Ketwarin_Tepsarn_CV.pdf">ดาวน์โหลด CV</a>
+            </div>
+          </div>
+
+          <div class="line-qr-card line-qr-card-refined">
+            <div class="line-qr-copy">
+              <span class="line-qr-kicker">LINE CONTACT</span>
+              <h3>สามารถติดต่อผ่าน LINE ได้ที่นี่</h3>
+              <p>สแกน QR Code เพื่อพูดคุย สอบถามข้อมูลเพิ่มเติม หรือนัดหมายสัมภาษณ์ได้ค่ะ</p>
+            </div>
+            <img src="line-qr.jpg" alt="QR Code LINE สำหรับติดต่อเกตุวรินทร์ เทพสาร" loading="lazy" decoding="async">
+          </div>
         </div>
       </div>
     </section>
   </main>
+  <button class="back-to-top" type="button" aria-label="กลับขึ้นด้านบน" title="กลับขึ้นด้านบน">↑</button>
 
   <footer>
     <span>© 2026 เกตุวรินทร์ เทพสาร</span>
-    <span>ดัดแปลงแนวทางจาก Lumière Template โดย <a href="https://templatesjungle.com/" target="_blank" rel="noopener">TemplatesJungle.com</a></span>
+    <span>ดัดแปลงแนวทางจาก Lumière Template โดย <a href="https://templatesjungle.com/" target="_blank" rel="noopener noreferrer">TemplatesJungle.com</a></span>
   </footer>
 
   <script src="script.js"></script>
